@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<!--
+
+-->
+<html xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <title>KTP</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div class="container" style="margin-top: 5px;">
+		<div class="row"
+			style="border: 0px darkgrey solid; width: 50%; margin: 0 auto; padding: 20px;">
+			<div class="col-sm-12">                          
+                            <h2 align="center">Kartu Tanda Penduduk </h2>
+                            <hr/>                           
+                            <h3>Nama Warga: </h3>
+                            <h4 th:text="${mytext}" style="color: brown"></h4>
+                            
+                            <h3>NIK: </h3>
+                            <h4 th:text="${nik}" style="color: brown"></h4>
+                            
+                            <h3>Tanggal Lahir: </h3>
+                            <h4 th:text="${tanggal}" style="color: brown"></h4>
+                                                   
+                            <p align="center"><img th:src="${img}" width="500" height="400" ></p>
+                            <p>Status: *Warga Sudah Bayar Pajak</p>                               
+                        </div>
+                </div>
+        </div>
+    </body>
+</html>
